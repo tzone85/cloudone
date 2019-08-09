@@ -23,7 +23,8 @@
     "fastify-cli": "^1.1.0",
     "fastify-plugin": "^1.5.0",
     "mysql2": "^1.6.5",
-    "sequelize": "^5.12.3"
+    "sequelize": "^5.12.3",
+    "sequelize-cli": "^5.5.0"
   },
   "devDependencies": {
     "standard": "^11.0.1",
