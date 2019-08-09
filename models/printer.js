@@ -9,10 +9,12 @@ class Printer extends Model {
 Printer.init({
   printer_name: sequelize.Sequelize.STRING,
   printer_ip: sequelize.Sequelize.STRING,
-  status: sequelize.Sequelize.ENUM('active','inactive')
+  status: sequelize.Sequelize.ENUM('active','inactive'),
 }, {
   sequelize,
-  modelName: 'printer'
+  timestamps: false,
+  modelName: 'printer',
+   tableName: 'printers'
 });
 
 module.exports = Printer;

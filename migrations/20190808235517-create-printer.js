@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('printers', {
@@ -16,18 +16,10 @@ module.exports = {
       },
       status: {
         type: Sequelize.ENUM('active', 'inactive')
-      },
-      created_at: {
-        allowNull: false,
-        type: Sequelize.DATE
-      },
-      updated_at: {
-        allowNull: false,
-        type: Sequelize.DATE
       }
-    });
+    })
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('printers');
+    return queryInterface.dropTable('printers')
   }
-};
+}
