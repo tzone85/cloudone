@@ -1,12 +1,11 @@
-'use strict'
+'use strict';
+const PrinterController = require('./controllers/PrinterController.js');
 
 module.exports = function (fastify, opts, next) {
-    fastify.get('/printer', function (request, reply) {
-        reply.send('this is a printer')
-    })
+    fastify.get('/printers', PrinterController.getPrinters)
 
     next()
-}
+};
 
 // If you prefer async/await, use the following
 //
