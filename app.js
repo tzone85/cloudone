@@ -4,9 +4,25 @@ require('dotenv').config();
 
 const path = require('path')
 const AutoLoad = require('fastify-autoload')
+const {graphiqlFastify, graphqlFastify} = require('fastify-graphql');
+const PrinterSchema = require('./schema/schema');
 
 module.exports = function (fastify, opts, next) {
   // Place here your custom code!
+
+  fastify.register(graphqlFastify, {
+    prefix: '/graphql',
+    graphql: {
+      schema: PrinterSchema,
+    },
+  });
+
+  fastify.register(graphiqlFastify, {
+    prefix: '/graphiql',
+    graphiql: {
+      endpointURL: '/graphql',
+    }
+  });
 
   // Do not touch the following lines
 
