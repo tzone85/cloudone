@@ -10,6 +10,15 @@ const PrinterSchema = require('./schema/schema');
 module.exports = function (fastify, opts, next) {
   // Place here your custom code!
 
+    fastify.register(require('fastify-cors'), {
+        // put your options here
+         methods: ['OPTIONS','GET', 'PUT', 'POST','DELETE'],
+        options: Object.assign({
+            origin: true,
+            allowedHeaders:'*'
+        }, opts)
+    })
+
   fastify.register(graphqlFastify, {
     prefix: '/graphql',
     graphql: {
