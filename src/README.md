@@ -182,3 +182,7 @@ Project Link: [https://github.com/tzone85/cloudone](https://github.com/tzone85/c
 - [Docker Documentation](https://docs.docker.com/)
 - [Nginx Documentation](https://nginx.org/en/docs/)
 - [Node.js Best Practices](https://nodejs.org/en/docs/guides/nodejs-docker-webapp)
+
+## 🥸 Author
+> This project is created by [@tzone85](https://github.com/tzone85)
+> A.K.A. Thando Village Boy Mini
