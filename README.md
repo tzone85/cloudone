@@ -44,20 +44,20 @@ CloudOne is a demonstration project that showcases containerization best practic
 ## 📁 Project Structure
 ```bash
 cloudone/
-├── src/ # Source code directory
-│ └── index.js # Main Node.js application entry point
-├── .idea/ # IDE configuration
-├── Dockerfile-nginx # Multi-stage Nginx container build
+├── src/               # Source code directory
+│ └── index.js         # Main Node.js application entry point
+├── .idea/             # IDE configuration
+├── Dockerfile-nginx   # Multi-stage Nginx container build
 │ └── Uses Alpine base for minimal footprint
-├── Dockerfile-node # Node.js application container
+├── Dockerfile-node    # Node.js application container
 │ └── Includes development dependencies
-├── default.conf # Nginx server configuration
+├── default.conf       # Nginx server configuration
 │ └── Reverse proxy and optimization settings
 ├── docker-compose.yml # Development environment setup
 │ └── Volume mounts for hot-reloading
 ├── docker-compose.prod.yml # Production configuration
 │ └── Optimized for deployment
-└── .dockerignore # Optimization for Docker builds
+└── .dockerignore      # Optimization for Docker builds
 ```
 ## 🔧 Installation & Setup
 
