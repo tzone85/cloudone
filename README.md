@@ -36,7 +36,7 @@ CloudOne is a demonstration project that showcases containerization best practic
 
 ## System Requirements
 
-- Node.js v18.x or higher
+- Node.js v10.15.3 or higher
 - Docker Engine 19.03.0+
 - Docker Compose 1.27.0+
 - Available ports 80 and 3000
